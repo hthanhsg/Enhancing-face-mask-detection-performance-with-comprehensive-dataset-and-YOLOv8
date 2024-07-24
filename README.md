@@ -1,6 +1,6 @@
 # Enhancing-Face-Mask-Detection-A-Comprehensive-Dataset-and-Performance-Evaluation-Using-YOLOv8
 
-Table 6. training performance for all models YOLOv8n to YOLOv8 s on FMD+MMD dataset.
+Table 6. training performance for all models YOLOv8n to YOLOv8x on FMD+MMD dataset.
 | Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
 |YOLOv8n|all|456|2156|0.904|0.777|0.868|0.593|
