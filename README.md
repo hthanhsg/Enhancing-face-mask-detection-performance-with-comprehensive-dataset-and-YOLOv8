@@ -1,5 +1,6 @@
 # Enhancing-Face-Mask-Detection-A-Comprehensive-Dataset-and-Performance-Evaluation-Using-YOLOv8
 
+Table 8. Test all model (1) on DRFMD Test set
 | Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
 |YOLOv8n|all|507|2663|0.904|0.818|0.876|0.637|
