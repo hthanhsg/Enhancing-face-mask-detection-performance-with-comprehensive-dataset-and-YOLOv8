@@ -153,22 +153,22 @@ Table 10.  DRFMD training performance for all models (2)
 </figure>
 
 <figure>
-  <img src="images/yolov8s_drmmd_100_16_640.png" alt="">
+  <img src="images/yolov8s_drfmd_100_16_640.png" alt="">
   <figcaption>Figure 5. Training performance using YOLOv8s with DRFMD dataset</figcaption>
 </figure>
 
 <figure>
-  <img src="images/yolov8m_drmmd_100_16_640.png" alt="">
+  <img src="images/yolov8m_drfmd_100_16_640.png" alt="">
   <figcaption>Figure 5. Training performance using YOLOv8m with DRFMD dataset</figcaption>
 </figure>
 
 <figure>
-  <img src="images/yolov8l_drmmd_100_16_640.png" alt="">
+  <img src="images/yolov8l_drfmd_100_16_640.png" alt="">
   <figcaption>Figure 5. Training performance using YOLOv8l with DRFMD dataset</figcaption>
 </figure>
 
 <figure>
-  <img src="images/yolov8x_drmmd_100_16_640.png" alt="">
+  <img src="images/yolov8x_drfmd_100_16_640.png" alt="">
   <figcaption>Figure 5. Training performance using YOLOv8x with DRFMD dataset</figcaption>
 </figure>
 
