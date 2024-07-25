@@ -24,6 +24,31 @@ Table 6. training performance for all models YOLOv8n to YOLOv8x on FMD+MMD datas
 ||1|405|1728|0.975|0.957|0.982|0.753|
 ||2|62|76|0.952|0.908|0.946|0.722|
 
+<figure>
+  <img src="images/yolov8n_fmd_mmd_100_16_640.png" alt="">
+  <figcaption>Figure 5. Training performance using YOLOv8n with FMD+MMD dataset</figcaption>
+</figure>
+
+<figure>
+  <img src="images/yolov8s_fmd_mmd_100_16_640.png" alt="">
+  <figcaption>Figure 5. Training performance using YOLOv8s with FMD+MMD dataset</figcaption>
+</figure>
+
+<figure>
+  <img src="images/yolov8m_fmd_mmd_100_16_640.png" alt="">
+  <figcaption>Figure 5. Training performance using YOLOv8m with FMD+MMD dataset</figcaption>
+</figure>
+
+<figure>
+  <img src="images/yolov8l_fmd_mmd_100_16_640.png" alt="">
+  <figcaption>Figure 5. Training performance using YOLOv8l with FMD+MMD dataset</figcaption>
+</figure>
+
+<figure>
+  <img src="images/yolov8x_fmd_mmd_100_16_640.png" alt="">
+  <figcaption>Figure 5. Training performance using YOLOv8x with FMD+MMD dataset</figcaption>
+</figure>
+
 Table 7. Test all model (1) on FMD+MMD Test set 
 | Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
