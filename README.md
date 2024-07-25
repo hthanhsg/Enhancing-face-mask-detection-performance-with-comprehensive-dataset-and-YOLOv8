@@ -146,6 +146,33 @@ Table 10.  DRFMD training performance for all models (2)
 ||1|699|1370|0.899|0.878|0.931|0.617|
 ||2|274|290|0.807|0.838|0.874|0.589|
 
+
+<figure>
+  <img src="images/yolov8n_drfmd_100_16_640.png" alt="">
+  <figcaption>Figure 5. Training performance using YOLOv8n with DRFMD dataset</figcaption>
+</figure>
+
+<figure>
+  <img src="images/yolov8s_drmmd_100_16_640.png" alt="">
+  <figcaption>Figure 5. Training performance using YOLOv8s with DRFMD dataset</figcaption>
+</figure>
+
+<figure>
+  <img src="images/yolov8m_drmmd_100_16_640.png" alt="">
+  <figcaption>Figure 5. Training performance using YOLOv8m with DRFMD dataset</figcaption>
+</figure>
+
+<figure>
+  <img src="images/yolov8l_drmmd_100_16_640.png" alt="">
+  <figcaption>Figure 5. Training performance using YOLOv8l with DRFMD dataset</figcaption>
+</figure>
+
+<figure>
+  <img src="images/yolov8x_drmmd_100_16_640.png" alt="">
+  <figcaption>Figure 5. Training performance using YOLOv8x with DRFMD dataset</figcaption>
+</figure>
+
+
 Table 11.  Test all model (2) on DRFMD Test set 
 | Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
