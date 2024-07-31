@@ -1,6 +1,6 @@
 # Enhancing-Face-Mask-Detection-A-Comprehensive-Dataset-and-Performance-Evaluation-Using-YOLOv8
 ## Dataset Larxel - Face Mask Dataset (LFMD) and Mikolaj Mikolaj Witkowski Medical Mask Dataset (MW-MMD) - FMD+MMD
-Table 1. Detail of FMD+MMD dataset.
+Table 1. Detail of FMMD (FMD+MMD) dataset.
 || Train | Valid | Test |
 | ------------- | ------------- |------------- |-------------|
 |Images|1067|456|507|
