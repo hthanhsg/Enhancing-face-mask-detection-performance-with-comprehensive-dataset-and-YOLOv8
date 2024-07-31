@@ -1,15 +1,15 @@
 # Enhancing-Face-Mask-Detection-A-Comprehensive-Dataset-and-Performance-Evaluation-Using-YOLOv8
 ## Dataset Larxel - Face Mask Dataset (LFMD) and Mikolaj Mikolaj Witkowski Medical Mask Dataset (MW-MMD) - FMD+MMD
-Table 6. FMD+MMD dataset.
-|| Train | Valid | Test |
-| ------------- | ------------- |------------- |-------------|
-|Images|1067|456|507|
-|Instances|5796|2156|2663|
-|Without Mask|1030|352|449|
-|With Mask|4589|1728|2122|
-|Wear Mask Incorrect|177|76|92|
+Table 1. DRFMD dataset.
+|| Train | Valid | Test |Total|
+| ------------- | ------------- |------------- |-------------|-------------|
+||Images|10304|1474|2949|14727|
+|Instances|20603|3052|6191|29846|
+|Without Mask (0)|9683|1392|3082|14157|
+|With Mask (1)|8926|1370|2527|11590|
+|Wear Mask Incorrect (2)|1994|290|582|2866|
 
-Table 1. Training performance detail for 5 models YOLOv8 on DRFMD dataset
+Table 2. Training performance detail for 5 models YOLOv8 on DRFMD dataset
 | Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
 |YOLOv8n|all|1474|3052|0.838|0.796|0.849|0.531|
