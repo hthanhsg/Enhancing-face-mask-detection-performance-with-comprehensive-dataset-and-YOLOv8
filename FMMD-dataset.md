@@ -1,1 +1,85 @@
+# Enhancing-Face-Mask-Detection-A-Comprehensive-Dataset-and-Performance-Evaluation-Using-YOLOv8
+## Dataset Larxel - Face Mask Dataset (LFMD) and Mikolaj Mikolaj Witkowski Medical Mask Dataset (MW-MMD) - FMD+MMD
+Table 1. Detail of FMD+MMD dataset.
+|| Train | Valid | Test |
+| ------------- | ------------- |------------- |-------------|
+|Images|1067|456|507|
+|Instances|5796|2156|2663|
+|Without Mask|1030|352|449|
+|With Mask|4589|1728|2122|
+|Wear Mask Incorrect|177|76|92|
+
+
+Table 2. Training performance detail for 5 models YOLOv8 on FMMD dataset
+| Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
+| ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
+|YOLOv8n|all|456|2156|0.904|0.777|0.868|0.593|
+||0|143|352|0.882|0.740|0.858|0.564|
+||1|405|1728|0.950|0.908|0.956|0.679|
+||2|62|76|0.879|0.684|0.788|0.536|
+|YOLOv8s|all|456|2156|0.945|0.863|0.924|0.652|
+||0|143|352|0.924|0.830|0.925|0.614|
+||1|405|1728|0.958|0.940|0.973|0.711|
+||2|62|76|0.954|0.818|0.873|0.631|
+|YOLOv8m|all|456|2156|0.966|0.879|0.948|0.688|
+||0|143|352|0.949|0.858|0.950|0.656|
+||1|405|1728|0.972|0.936|0.978|0.728|
+||2|62|76|0.977|0.842|0.917|0.681|
+|YOLOv8l|all|456|2156|0.979|0.898|0.956|0.705|
+||0|143|352|0.957|0.852|0.954|0.674|
+||1|405|1728|0.980|0.949|0.981|0.744|
+||2|62|76|1.00|0.894|0.931|0.696|
+|YOLOv8x|All|456|2156|0.955|0.924|0.963|0.719|
+||0|143|352|0.938|0.908|0.960|0.683|
+||1|405|1728|0.975|0.957|0.982|0.753|
+||2|62|76|0.952|0.908|0.946|0.722|
+
+<figure>
+  <img src="images/yolov8n_fmd_mmd_100_16_640.png" alt="">
+  <figcaption>Figure 1. Training performance using YOLOv8n with FMMD dataset</figcaption>
+</figure>
+
+<figure>
+  <img src="images/yolov8s_fmd_mmd_100_16_640.png" alt="">
+  <figcaption>Figure 2. Training performance using YOLOv8s with FMMD dataset</figcaption>
+</figure>
+
+<figure>
+  <img src="images/yolov8m_fmd_mmd_100_16_640.png" alt="">
+  <figcaption>Figure 3. Training performance using YOLOv8m with FMMD dataset</figcaption>
+</figure>
+
+<figure>
+  <img src="images/yolov8l_fmd_mmd_100_16_640.png" alt="">
+  <figcaption>Figure 4. Training performance using YOLOv8l with FMMD dataset</figcaption>
+</figure>
+
+<figure>
+  <img src="images/yolov8x_fmd_mmd_100_16_640.png" alt="">
+  <figcaption>Figure 5. Training performance using YOLOv8x with FMMD dataset</figcaption>
+</figure>
+
+Table 3. Testing Result of YwFMMD models on FMMD Testset
+| Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
+| ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
+|YOLOv8n|all|507|2663|0.904|0.818|0.876|0.637|
+||0|176|449|0.871|0.804|0.871|0.595|
+||1|462|2122|0.943|0.899|0.933|0.703|
+||2|75|92|0.899|0.750|0.825|0.614|
+|YOLOv8s|all|507|2663|0.927|0.873|0.920|0.698|
+||0|176|449|0.900|0.864|0.918|0.652|
+||1|462|2122|0.948|0.928|0.952|0.751|
+||2|75|92|0.931|0.826|0.889|0.691|
+|YOLOv8m|all|507|2663|0.968|0.883|0.937|0.739|
+||0|176|449|0.955|0.889|0.947|0.706|
+||1|462|2122|0.976|0.924|0.961|0.779|
+||2|75|92|0.973|0.837|0.904|0.733|
+|YOLOv8l|all|507|2663|0.973|0.922|0.967|0.773|
+||0|176|449|0.967|0.907|0.964|0.742|
+||1|462|2122|0.986|0.956|0.984|0.807|
+||2|75|92|0.966|0.902|0.953|0.771|
+|YOLOv8x|all|507|2663|0.966|0.917|0.948|0.768|
+||0|176|449|0.960|0.911|0.942|0.723|
+||1|462|2122|0.976|0.925|0.954|0.800|
+||2|75|92|0.963|0.913|0.948|0.780|
 
