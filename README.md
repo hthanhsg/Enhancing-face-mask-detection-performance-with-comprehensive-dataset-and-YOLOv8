@@ -1,6 +1,7 @@
 # Enhancing-Face-Mask-Detection-A-Comprehensive-Dataset-and-Performance-Evaluation-Using-YOLOv8
+# Enhancing-Face-Mask-Detection-A-Comprehensive-Dataset-and-Performance-Evaluation-Using-YOLOv8
 ## Dataset Larxel - Face Mask Dataset (LFMD) and Mikolaj Mikolaj Witkowski Medical Mask Dataset (MW-MMD) - FMD+MMD
-Table 6. FMD+MMD dataset.
+Table 1. Detail of FMMD (FMD+MMD) dataset.
 || Train | Valid | Test |
 | ------------- | ------------- |------------- |-------------|
 |Images|1067|456|507|
@@ -10,7 +11,7 @@ Table 6. FMD+MMD dataset.
 |Wear Mask Incorrect|177|76|92|
 
 
-Table 6. training performance for all models YOLOv8n to YOLOv8x on FMD+MMD dataset.
+Table 2. Training performance detail for 5 models YOLOv8 on FMMD dataset
 | Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
 |YOLOv8n|all|456|2156|0.904|0.777|0.868|0.593|
@@ -36,30 +37,30 @@ Table 6. training performance for all models YOLOv8n to YOLOv8x on FMD+MMD datas
 
 <figure>
   <img src="images/yolov8n_fmd_mmd_100_16_640.png" alt="">
-  <figcaption>Figure 5. Training performance using YOLOv8n with FMD+MMD dataset</figcaption>
+  <figcaption>Figure 1. Training performance using YOLOv8n with FMMD dataset</figcaption>
 </figure>
 
 <figure>
   <img src="images/yolov8s_fmd_mmd_100_16_640.png" alt="">
-  <figcaption>Figure 5. Training performance using YOLOv8s with FMD+MMD dataset</figcaption>
+  <figcaption>Figure 2. Training performance using YOLOv8s with FMMD dataset</figcaption>
 </figure>
 
 <figure>
   <img src="images/yolov8m_fmd_mmd_100_16_640.png" alt="">
-  <figcaption>Figure 5. Training performance using YOLOv8m with FMD+MMD dataset</figcaption>
+  <figcaption>Figure 3. Training performance using YOLOv8m with FMMD dataset</figcaption>
 </figure>
 
 <figure>
   <img src="images/yolov8l_fmd_mmd_100_16_640.png" alt="">
-  <figcaption>Figure 5. Training performance using YOLOv8l with FMD+MMD dataset</figcaption>
+  <figcaption>Figure 4. Training performance using YOLOv8l with FMMD dataset</figcaption>
 </figure>
 
 <figure>
   <img src="images/yolov8x_fmd_mmd_100_16_640.png" alt="">
-  <figcaption>Figure 5. Training performance using YOLOv8x with FMD+MMD dataset</figcaption>
+  <figcaption>Figure 5. Training performance using YOLOv8x with FMMD dataset</figcaption>
 </figure>
 
-Table 7. Test all model (1) on FMD+MMD Test set 
+Table 3. Testing Result of YwFMMD models on FMMD Testset
 | Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
 |YOLOv8n|all|507|2663|0.904|0.818|0.876|0.637|
@@ -83,32 +84,31 @@ Table 7. Test all model (1) on FMD+MMD Test set
 ||1|462|2122|0.976|0.925|0.954|0.800|
 ||2|75|92|0.963|0.913|0.948|0.780|
 
-
-Table 8. Test all model (1) on DRFMD Test set
+Table 4. Testing Result of YwFMMD models on DRFMD Testset
 | Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
-|YOLOv8n|all|507|2663|0.904|0.818|0.876|0.637|
-||0|176|449|0.871|0.804|0.871|0.595|
-||1|462|2122|0.943|0.899|0.933|0.703|
-||2|75|92|0.899|0.750|0.825|0.614|
-|YOLOv8s|all|507|2663|0.927|0.873|0.920|0.698|
-||0|176|449|0.900|0.864|0.918|0.652|
-||1|462|2122|0.948|0.928|0.952|0.751|
-||2|75|92|0.931|0.826|0.889|0.691|
-|YOLOv8m|all|507|2663|0.968|0.883|0.937|0.739|
-||0|176|449|0.955|0.889|0.947|0.706|
-||1|462|2122|0.976|0.924|0.961|0.779|
-||2|75|92|0.973|0.837|0.904|0.733|
-|YOLOv8l|all|507|2663|0.973|0.922|0.967|0.773|
-||0|176|449|0.967|0.907|0.964|0.742|
-||1|462|2122|0.986|0.956|0.984|0.807|
-||2|75|92|0.966|0.902|0.953|0.771|
-|YOLOv8x|all|507|2663|0.966|0.917|0.948|0.768|
-||0|176|449|0.960|0.911|0.942|0.723|
-||1|462|2122|0.976|0.925|0.954|0.800|
-||2|75|92|0.963|0.913|0.948|0.780|
+|YOLOv8n|all|2949|6191|0.702|0.577|0.604|0.264|
+||0|1309|3082|0.771|0.510|0.561|0.200|
+||1|1400|2527|0.644|0.738|0.696|0.316|
+||2|549|582|0.691|0.482|0.555|0.277|
+|YOLOv8s|all|2949|6191|0.712|0.595|0.615|0.275|
+||0|1309|3082|0.772|0.542|0.597|0.219|
+||1|1400|2527|0.662|0.740|0.706|0.326|
+||2|549|582|0.703|0.503|0.542|0.280|
+|YOLOv8m|all|2949|6191|0.720|0.632|0.655|0.298|
+||0|1309|3082|0.763|0.576|0.618|0.235|
+||1|1400|2527|0.661|0.753|0.720|0.336|
+||2|549|582|0.736|0.565|0.628|0.324|
+|YOLOv8l|all|2949|6191|0.719|0.634|0.658|0.302|
+||0|1309|3082|0.786|0.553|0.619|0.234|
+||1|1400|2527|0.702|0.739|0.725|0.340|
+||2|549|582|0.670|0.610|0.628|0.331|
+|YOLOv8x|all|2949|6191|0.691|0.633|0.639|0.291|
+||0|1309|3082|0.771|0.568|0.615|0.230|
+||1|1400|2527|0.659|0.746|0.721|0.337|
+||2|549|582|0.644|0.584|0.582|0.306|
 
-Table 9. Test all model (1) on Medical Mask Test set
+Table 5. Testing Result of YwFMMD models on Medical Mask Test set
 | Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
 |YOLOv8n|all|1311|2964|0.772|0.596|0.661|0.291|
@@ -132,7 +132,18 @@ Table 9. Test all model (1) on Medical Mask Test set
 ||1|1030|2030|0.865|0.913|0.926|0.447|
 ||2|106|127|0.432|0.370|0.296|0.130|
 
-Table 10.  DRFMD training performance for all models (2)
+
+## Dataset DRFMD
+Table 6. DRFMD dataset.
+|| Train | Valid | Test |Total|
+| ------------- | ------------- |------------- |-------------|-------------|
+||Images|10304|1474|2949|14727|
+|Instances|20603|3052|6191|29846|
+|Without Mask (0)|9683|1392|3082|14157|
+|With Mask (1)|8926|1370|2527|11590|
+|Wear Mask Incorrect (2)|1994|290|582|2866|
+
+Table 7. Training performance detail for 5 models YOLOv8 on DRFMD dataset
 | Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
 |YOLOv8n|all|1474|3052|0.838|0.796|0.849|0.531|
@@ -159,31 +170,31 @@ Table 10.  DRFMD training performance for all models (2)
 
 <figure>
   <img src="images/yolov8n_drfmd_100_16_640.png" alt="">
-  <figcaption>Figure 5. Training performance using YOLOv8n with DRFMD dataset</figcaption>
+  <figcaption>Figure 6. Training performance using YOLOv8n with DRFMD dataset</figcaption>
 </figure>
 
 <figure>
   <img src="images/yolov8s_drfmd_100_16_640.png" alt="">
-  <figcaption>Figure 5. Training performance using YOLOv8s with DRFMD dataset</figcaption>
+  <figcaption>Figure 7. Training performance using YOLOv8s with DRFMD dataset</figcaption>
 </figure>
 
 <figure>
   <img src="images/yolov8m_drfmd_100_16_640.png" alt="">
-  <figcaption>Figure 5. Training performance using YOLOv8m with DRFMD dataset</figcaption>
+  <figcaption>Figure 8. Training performance using YOLOv8m with DRFMD dataset</figcaption>
 </figure>
 
 <figure>
   <img src="images/yolov8l_drfmd_100_16_640.png" alt="">
-  <figcaption>Figure 5. Training performance using YOLOv8l with DRFMD dataset</figcaption>
+  <figcaption>Figure 9. Training performance using YOLOv8l with DRFMD dataset</figcaption>
 </figure>
 
 <figure>
   <img src="images/yolov8x_drfmd_100_16_640.png" alt="">
-  <figcaption>Figure 5. Training performance using YOLOv8x with DRFMD dataset</figcaption>
+  <figcaption>Figure 10. Training performance using YOLOv8x with DRFMD dataset</figcaption>
 </figure>
 
 
-Table 11.  Test all model (2) on DRFMD Test set 
+Table 8.  Testing Result of YwDRFMD models on DRFMD Test set 
 | Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
 |YOLOv8n|all|2949|6191|0.840|0.756|0.814|0.507|
@@ -207,7 +218,7 @@ Table 11.  Test all model (2) on DRFMD Test set
 ||1|1400|2527|0.879|0.865|0.912|0.600|
 ||2|549|582|0.833|0.864|0.887|0.574|
 
-Table 12.  Test all model (2) on FMD+MMD Test set 
+Table 9.  Testing Result of YwDRFMD models on FMMD Test set 
 | Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
 |YOLOv8n|all|507|2663|0.810|0.686|0.737|0.371|
@@ -231,7 +242,7 @@ Table 12.  Test all model (2) on FMD+MMD Test set
 ||1|462|2122|0.867|0.861|0.899|0.420|
 ||2|75|92|0.815|0.707|0.725|0.376|
 
-Table 13.  Test set Kết quả test các model 2 trên tập test DRFMD 
+Table 10.  Testing Result of YwDRFMD models on HITL-MMD Test set 
 | Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
 |YOLOv8n|all|1311|2964|0.778|0.646|0.705|0.452|
@@ -254,3 +265,4 @@ Table 13.  Test set Kết quả test các model 2 trên tập test DRFMD
 ||0|462|807|0.834|0.714|0.815|0.482|
 ||1|1030|2030|0.928|0.870|0.935|0.549|
 ||2|106|127|0.597|0.560|0.560|0.336|
+
