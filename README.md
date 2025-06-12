@@ -1,267 +1,28 @@
-# Training and testing results on YOLOv8 (n, s, m, l, x) with FMMD and DRFMD datasets
-## Dataset Larxel - Face Mask Dataset (LFMD) and Mikolaj Mikolaj Witkowski Medical Mask Dataset (MW-MMD) - FMD+MMD
-Table 1. Detail of FMMD (FMD+MMD) dataset.
-|| Train | Valid | Test |
-| ------------- | ------------- |------------- |-------------|
-|Images|1067|456|507|
-|Instances|5796|2156|2663|
-|Without Mask|1030|352|449|
-|With Mask|4589|1728|2122|
-|Wear Mask Incorrect|177|76|92|
+# Enhancing Face Mask Detection Performance with a Comprehensive Dataset and YOLOv8
 
+This repository contains code and materials for the paper:
 
-Table 2. Training performance detail for 5 models YOLOv8 on FMMD dataset
-| Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
-| ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
-|YOLOv8n|all|456|2156|0.904|0.777|0.868|0.593|
-||0|143|352|0.882|0.740|0.858|0.564|
-||1|405|1728|0.950|0.908|0.956|0.679|
-||2|62|76|0.879|0.684|0.788|0.536|
-|YOLOv8s|all|456|2156|0.945|0.863|0.924|0.652|
-||0|143|352|0.924|0.830|0.925|0.614|
-||1|405|1728|0.958|0.940|0.973|0.711|
-||2|62|76|0.954|0.818|0.873|0.631|
-|YOLOv8m|all|456|2156|0.966|0.879|0.948|0.688|
-||0|143|352|0.949|0.858|0.950|0.656|
-||1|405|1728|0.972|0.936|0.978|0.728|
-||2|62|76|0.977|0.842|0.917|0.681|
-|YOLOv8l|all|456|2156|0.979|0.898|0.956|0.705|
-||0|143|352|0.957|0.852|0.954|0.674|
-||1|405|1728|0.980|0.949|0.981|0.744|
-||2|62|76|1.00|0.894|0.931|0.696|
-|YOLOv8x|All|456|2156|0.955|0.924|0.963|0.719|
-||0|143|352|0.938|0.908|0.960|0.683|
-||1|405|1728|0.975|0.957|0.982|0.753|
-||2|62|76|0.952|0.908|0.946|0.722|
+**"Enhancing Face Mask Detection Performance with a Comprehensive Dataset and YOLOv8"**
 
-<figure>
-  <img src="images/yolov8n_fmd_mmd_100_16_640.png" alt="">
-  <figcaption>Figure 1. Training performance using YOLOv8n with FMMD dataset</figcaption>
-</figure>
+- **Objective:** Improve the accuracy and robustness of face mask detection models using a newly curated, comprehensive dataset and state-of-the-art YOLOv8 architectures.
 
-<figure>
-  <img src="images/yolov8s_fmd_mmd_100_16_640.png" alt="">
-  <figcaption>Figure 2. Training performance using YOLOv8s with FMMD dataset</figcaption>
-</figure>
+## Dataset
 
-<figure>
-  <img src="images/yolov8m_fmd_mmd_100_16_640.png" alt="">
-  <figcaption>Figure 3. Training performance using YOLOv8m with FMMD dataset</figcaption>
-</figure>
+- The dataset used in this project is **DRFMD: Diverse and Robust Face Mask Dataset**.
+- **Download Link:**  
+  [https://www.kaggle.com/datasets/hthanhsg/drfmd-diverse-and-robust-dataset-for-fmd](https://www.kaggle.com/datasets/hthanhsg/drfmd-diverse-and-robust-dataset-for-fmd)
+- All experiments and model training in this repository are based on this dataset.  
+- The dataset is annotated in YOLO format, with three classes: without mask, with mask, and wear mask incorrect.
 
-<figure>
-  <img src="images/yolov8l_fmd_mmd_100_16_640.png" alt="">
-  <figcaption>Figure 4. Training performance using YOLOv8l with FMMD dataset</figcaption>
-</figure>
+## Contents
+- **Comparison of performance metrics** [(Precision, Recall, mAP@50, mAP@50-95) between FMMD and DRFMD datasets](#training-and-testing-results-on-yolo-v8-with-fmmd-and-drfmd-datasets.md) 
+- **Pre-trained model weights** see [Model Storage](#model-storage).
 
-<figure>
-  <img src="images/yolov8x_fmd_mmd_100_16_640.png" alt="">
-  <figcaption>Figure 5. Training performance using YOLOv8x with FMMD dataset</figcaption>
-</figure>
+## Citation
 
-Table 3. Testing Result of YwFMMD models on FMMD Testset
-| Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
-| ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
-|YOLOv8n|all|507|2663|0.904|0.818|0.876|0.637|
-||0|176|449|0.871|0.804|0.871|0.595|
-||1|462|2122|0.943|0.899|0.933|0.703|
-||2|75|92|0.899|0.750|0.825|0.614|
-|YOLOv8s|all|507|2663|0.927|0.873|0.920|0.698|
-||0|176|449|0.900|0.864|0.918|0.652|
-||1|462|2122|0.948|0.928|0.952|0.751|
-||2|75|92|0.931|0.826|0.889|0.691|
-|YOLOv8m|all|507|2663|0.968|0.883|0.937|0.739|
-||0|176|449|0.955|0.889|0.947|0.706|
-||1|462|2122|0.976|0.924|0.961|0.779|
-||2|75|92|0.973|0.837|0.904|0.733|
-|YOLOv8l|all|507|2663|0.973|0.922|0.967|0.773|
-||0|176|449|0.967|0.907|0.964|0.742|
-||1|462|2122|0.986|0.956|0.984|0.807|
-||2|75|92|0.966|0.902|0.953|0.771|
-|YOLOv8x|all|507|2663|0.966|0.917|0.948|0.768|
-||0|176|449|0.960|0.911|0.942|0.723|
-||1|462|2122|0.976|0.925|0.954|0.800|
-||2|75|92|0.963|0.913|0.948|0.780|
+If you use this work or dataset, please cite the corresponding paper and the DRFMD dataset.
 
-Table 4. Testing Result of YwFMMD models on DRFMD Testset
-| Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
-| ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
-|YOLOv8n|all|2949|6191|0.702|0.577|0.604|0.264|
-||0|1309|3082|0.771|0.510|0.561|0.200|
-||1|1400|2527|0.644|0.738|0.696|0.316|
-||2|549|582|0.691|0.482|0.555|0.277|
-|YOLOv8s|all|2949|6191|0.712|0.595|0.615|0.275|
-||0|1309|3082|0.772|0.542|0.597|0.219|
-||1|1400|2527|0.662|0.740|0.706|0.326|
-||2|549|582|0.703|0.503|0.542|0.280|
-|YOLOv8m|all|2949|6191|0.720|0.632|0.655|0.298|
-||0|1309|3082|0.763|0.576|0.618|0.235|
-||1|1400|2527|0.661|0.753|0.720|0.336|
-||2|549|582|0.736|0.565|0.628|0.324|
-|YOLOv8l|all|2949|6191|0.719|0.634|0.658|0.302|
-||0|1309|3082|0.786|0.553|0.619|0.234|
-||1|1400|2527|0.702|0.739|0.725|0.340|
-||2|549|582|0.670|0.610|0.628|0.331|
-|YOLOv8x|all|2949|6191|0.691|0.633|0.639|0.291|
-||0|1309|3082|0.771|0.568|0.615|0.230|
-||1|1400|2527|0.659|0.746|0.721|0.337|
-||2|549|582|0.644|0.584|0.582|0.306|
+## License
 
-Table 5. Testing Result of YwFMMD models on Medical Mask Test set
-| Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
-| ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
-|YOLOv8n|all|1311|2964|0.772|0.596|0.661|0.291|
-||0|462|807|0.878|0.572|0.736|0.298|
-||1|1030|2030|0.858|0.894|0.906|0.426|
-||2|106|127|0.429|0.323|0.340|0.150|
-|YOLOv8s|all|1311|2964|0.747|0.626|0.684|0.306|
-||0|462|807|0.854|0.638|0.749|0.318|
-||1|1030|2030|0.845|0.901|0.910|0.432|
-||2|106|127|0.543|0.339|0.395|0.168|
-|YOLOv8m|all|1311|2964|0.715|0.653|0.682|0.315|
-||0|462|807|0.878|0.684|0.789|0.341|
-||1|1030|2030|0.861|0.921|0.935|0.450|
-||2|106|127|0.404|0.354|0.323|0.154|
-|YOLOv8l|all|1311|2964|0.71|0.635|0.683|0.315|
-||0|462|807|0.883|0.638|0.789|0.344|
-||1|1030|2030|0.881|0.906|0.924|0.445|
-||2|106|127|0.366|0.362|0.335|0.156|
-|YOLOv8x|all|1311|2964|0.729|0.650|0.675|0.309|
-||0|462|807|0.889|0.667|0.803|0.350|
-||1|1030|2030|0.865|0.913|0.926|0.447|
-||2|106|127|0.432|0.370|0.296|0.130|
-
-
-## Dataset DRFMD
-Table 6. DRFMD dataset.
-|| Train | Valid | Test |Total|
-| ------------- | ------------- |------------- |-------------|-------------|
-||Images|10304|1474|2949|14727|
-|Instances|20603|3052|6191|29846|
-|Without Mask (0)|9683|1392|3082|14157|
-|With Mask (1)|8926|1370|2527|11590|
-|Wear Mask Incorrect (2)|1994|290|582|2866|
-
-Table 7. Training performance detail for 5 models YOLOv8 on DRFMD dataset
-| Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
-| ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
-|YOLOv8n|all|1474|3052|0.838|0.796|0.849|0.531|
-||0|660|1392|0.846|0.742|0.820|0.498|
-||1|699|1370|0.863|0.809|0.884|0.546|
-||2|274|290|0.804|0.838|0.842|0.549|
-|YOLOv8s|all|1474|3052|0.845|0.820|0.872|0.557|
-||0|660|1392|0.848|0.767|0.847|0.533|
-||1|699|1370|0.883|0.856|0.907|0.578|
-||2|274|290|0.804|0.838|0.862|0.559|
-|YOLOv8m|all|1474|3052|0.862|0.823|0.888|0.582|
-||0|660|1392|0.867|0.772|0.865|0.551|
-||1|699|1370|0.911|0.866|0.928|0.605|
-||2|274|290|0.809|0.832|0.873|0.591|
-|YOLOv8l|all|1474|3052|0.859|0.844|0.889|0.586|
-||0|660|1392|0.861|0.799|0.865|0.553|
-||1|699|1370|0.895|0.875|0.922|0.612|
-||2|274|290|0.822|0.859|0.880|0.594|
-|YOLOv8x|all|1474|3052|0.859|0.838|0.895|0.593|
-||0|660|1392|0.872|0.797|0.881|0.574|
-||1|699|1370|0.899|0.878|0.931|0.617|
-||2|274|290|0.807|0.838|0.874|0.589|
-
-
-<figure>
-  <img src="images/yolov8n_drfmd_100_16_640.png" alt="">
-  <figcaption>Figure 6. Training performance using YOLOv8n with DRFMD dataset</figcaption>
-</figure>
-
-<figure>
-  <img src="images/yolov8s_drfmd_100_16_640.png" alt="">
-  <figcaption>Figure 7. Training performance using YOLOv8s with DRFMD dataset</figcaption>
-</figure>
-
-<figure>
-  <img src="images/yolov8m_drfmd_100_16_640.png" alt="">
-  <figcaption>Figure 8. Training performance using YOLOv8m with DRFMD dataset</figcaption>
-</figure>
-
-<figure>
-  <img src="images/yolov8l_drfmd_100_16_640.png" alt="">
-  <figcaption>Figure 9. Training performance using YOLOv8l with DRFMD dataset</figcaption>
-</figure>
-
-<figure>
-  <img src="images/yolov8x_drfmd_100_16_640.png" alt="">
-  <figcaption>Figure 10. Training performance using YOLOv8x with DRFMD dataset</figcaption>
-</figure>
-
-
-Table 8.  Testing Result of YwDRFMD models on DRFMD Test set 
-| Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
-| ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
-|YOLOv8n|all|2949|6191|0.840|0.756|0.814|0.507|
-||0|1309|3082|0.845|0.674|0.747|0.443|
-||1|1400|2527|0.850|0.774|0.848|0.540|
-||2|549|582|0.824|0.820|0.846|0.539|
-|YOLOv8s|all|2949|6191|0.839|0.797|0.844|0.536|
-||0|1309|3082|0.847|0.716|0.793|0.482|
-||1|1400|2527|0.864|0.829|0.883|0.567|
-||2|549|582|0.805|0.847|0.855|0.559|
-|YOLOv8m|all|2949|6191|0.858|0.800|0.856|0.553|
-||0|1309|3082|0.862|0.713|0.795|0.498|
-||1|1400|2527|0.890|0.854|0.907|0.591|
-||2|549|582|0.821|0.833|0.865|0.569|
-|YOLOv8l|all|2949|6191|0.866|0.811|0.867|0.560|
-||0|1309|3082|0.863|0.739|0.814|0.510|
-||1|1400|2527|0.882|0.856|0.906|0.600|
-||2|549|582|0.853|0.840|0.881|0.569|
-|YOLOv8x|all|2949|6191|0.860|0.827|0.874|0.567|
-||0|1309|3082|0.867|0.752|0.822|0.525|
-||1|1400|2527|0.879|0.865|0.912|0.600|
-||2|549|582|0.833|0.864|0.887|0.574|
-
-Table 9.  Testing Result of YwDRFMD models on FMMD Test set 
-| Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
-| ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
-|YOLOv8n|all|507|2663|0.810|0.686|0.737|0.371|
-||0|176|449|0.837|0.648|0.745|0.329|
-||1|462|2122|0.872|0.785|0.847|0.418|
-||2|75|92|0.723|0.625|0.619|0.367|
-|YOLOv8s|all|507|2663|0.814|0.715|0.772|0.372|
-||0|176|449|0.825|0.695|0.760|0.315|
-||1|462|2122|0.874|0.819|0.867|0.415|
-||2|75|92|0.742|0.630|0.689|0.387|
-|YOLOv8m|all|507|2663|0.807|0.750|0.783|0.359|
-||0|176|449|0.768|0.746|0.756|0.305|
-||1|462|2122|0.848|0.830|0.858|0.394|
-||2|75|92|0.805|0.674|0.735|0.379|
-|YOLOv8l|all|507|2663|0.771|0.758|0.776|0.358|
-||0|176|449|0.744|0.742|0.758|0.306|
-||1|462|2122|0.819|0.827|0.851|0.402|
-||2|75|92|0.751|0.707|0.719|0.367|
-|YOLOv8x|all|507|2663|0.830|0.753|0.800|0.374|
-||0|176|449|0.809|0.690|0.775|0.327|
-||1|462|2122|0.867|0.861|0.899|0.420|
-||2|75|92|0.815|0.707|0.725|0.376|
-
-Table 10.  Testing Result of YwDRFMD models on HITL-MMD Test set 
-| Model  | Class | Images | Instances | Precision (P) | Recall (R) | mAP@50	| mAP@50-95 |
-| ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |------------- |
-|YOLOv8n|all|1311|2964|0.778|0.646|0.705|0.452|
-||0|462|807|0.819|0.635|0.762|0.468|
-||1|1030|2030|0.931|0.817|0.901|0.598|
-||2|106|127|0.584|0.487|0.453|0.291|
-|YOLOv8s|all|1311|2964|0.778|0.698|0.731|0.455|
-||0|462|807|0.851|0.685|0.789|0.469|
-||1|1030|2030|0.925|0.856|0.919|0.585|
-||2|106|127|0.557|0.551|0.486|0.311|
-|YOLOv8m|all|1311|2964|0.795|0.716|0.779|0.478|
-||0|462|807|0.841|0.725|0.818|0.486|
-||1|1030|2030|0.933|0.88|0.941|0.572|
-||2|106|127|0.611|0.543|0.579|0.374|
-|YOLOv8l|all|1311|2964|0.787|0.712|0.769|0.458|
-||0|462|807|0.843|0.706|0.805|0.483|
-||1|1030|2030|0.922|0.870|0.932|0.544|
-||2|106|127|0.596|0.559|0.571|0.346|
-|YOLOv8x|all|1311|2964|0.786|0.715|0.770|0.455|
-||0|462|807|0.834|0.714|0.815|0.482|
-||1|1030|2030|0.928|0.870|0.935|0.549|
-||2|106|127|0.597|0.560|0.560|0.336|
+The dataset is released under the [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/).
 
