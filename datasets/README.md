@@ -55,8 +55,7 @@ The dataset follows the [YOLO annotation format](https://github.com/AlexeyAB/dar
 If you use this dataset in your research, please cite the original sources and this repository.
 
 ## License
-
-(Please specify your license here, e.g. CC BY 4.0, CC0, or other as applicable.)
+Attribution 4.0 International (CC BY 4.0)
 
 ## Contact
 
