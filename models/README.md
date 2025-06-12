@@ -1,15 +1,13 @@
-#Model Storage
+# Model Storage
 
 Due to GitHub’s file size limitation (maximum 25 MB per file), we are unable to upload the trained model files (*.pt, *.h5, *.pth, etc.) directly to this repository.
 
 If you need access to the pre-trained models, please use one of the following methods:
 
-Download from External Storage:
+## Download from External Storage:
 The model files are hosted on [Google Drive/Dropbox/OneDrive/Zenodo/your cloud link].
 
-Download Link 1 (Google Drive)
-
-Download Link 2 (Backup)
+Download Link 1 (Google Drive): https://drive.google.com/drive/folders/1z3YllPSrbZZ6w1F6uytzv6f-B5U9WiVE?usp=drive_link
 
 Request by Email:
 You can also request the model files by contacting the corresponding author at:
