@@ -16,6 +16,12 @@ The **DRFMD dataset** is a diverse and robust face mask detection dataset, aggre
 | Zalo AI Challenge   | 1,835 | 260   | 518  | 2,613 |
 | **DRFMD (total)**   | 10,304| 1,474 |2,949 |14,727 |
 
+## Download
+
+- The full dataset is available for download on Kaggle:  
+  [https://www.kaggle.com/datasets/hthanhsg/drfmd-diverse-and-robust-dataset-for-fmd](https://www.kaggle.com/datasets/hthanhsg/drfmd-diverse-and-robust-dataset-for-fmd)
+
+
 ## Label Annotation
 
 All images in DRFMD are manually annotated in **YOLO format** with the following three categories:
@@ -37,4 +43,22 @@ All images in DRFMD are manually annotated in **YOLO format** with the following
 ## Annotation Format
 
 The dataset follows the [YOLO annotation format](https://github.com/AlexeyAB/darknet#how-to-train-to-detect-your-custom-objects):
+
+
+## Usage
+
+- The dataset is organized into `train/`, `valid/`, and `test/` directories.
+- Each directory contains images and corresponding YOLO annotation files (`.txt`).
+
+## Citation
+
+If you use this dataset in your research, please cite the original sources and this repository.
+
+## License
+
+(Please specify your license here, e.g. CC BY 4.0, CC0, or other as applicable.)
+
+## Contact
+
+For questions or requests, please open an issue or contact the maintainer at thanhnh@ptit.edu.vn
 
