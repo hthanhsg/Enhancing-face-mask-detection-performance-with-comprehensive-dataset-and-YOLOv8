@@ -1,5 +1,4 @@
 # Training and testing results on YOLOv8 (n, s, m, l, x) with FMMD and DRFMD datasets
-# Enhancing face mask detection performance with comprehensive dataset and YOLOv8
 ## Dataset Larxel - Face Mask Dataset (LFMD) and Mikolaj Mikolaj Witkowski Medical Mask Dataset (MW-MMD) - FMD+MMD
 Table 1. Detail of FMMD (FMD+MMD) dataset.
 || Train | Valid | Test |
